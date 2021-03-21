@@ -1,0 +1,29 @@
+<h2>{{ name}} - {{station}} - {{sens}}</h2>
+
+<table class="horaires">
+  <tr>
+    <th>Missions</th>
+    <th>Terminus</th>
+    <th>Message</th>
+    <th>Heure</th>
+    {% for stops in otherstops %}
+        <th>{{ stops }}</th>
+    {%endfor%}
+  </tr>
+{% for m in missions %}
+  <tr class = {{ m.stops }}>
+    <td> {{ m.code }} </td>
+    <td> {{ m.terminus }} </td>
+    <td> {{ m.message }} </td>
+    <td> {{ m.date }} </td>
+    {% for stops in m.otherstops %}
+      {% if stops %}
+        <td>X</td>
+      {% else %}
+        <td></td>
+      {% endif %}
+    {%endfor%}
+  </tr>
+{% endfor %}
+
+</table>
