@@ -3,6 +3,8 @@ Ton Écran Ratp (Rer, Etc.)
 
 Nécessite flask et zeep
 
+[Exemple](https://gilleschardon.fr/TERRE.html) 
+
 Pour tester (en local) :
 
 * ajouter le fichier `wsiv.wsdl` dans le répertoire instance
