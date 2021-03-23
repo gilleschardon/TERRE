@@ -24,3 +24,5 @@ ligne	station	direction	nbmax	T
 séparés par des tabs où `nbmax` est le nombre maximal de trains/tram/bus à afficher (0 si infini) et `T` le temps nécessaire pour arriver à la gare/station.
 
 Pour le RER, on peut faire suivre par des stations pour lesquelles l'arrêt sera indiqué.
+
+`twitter` reproduit le fil twitter RER B (celui que je prends).
